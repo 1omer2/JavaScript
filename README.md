@@ -1,2 +1,2 @@
-# JavaScript
-1.Proje: Sayi Tahmin Etme Oyunu
+# Content
+1.Sayi Tahmin Etme Oyunu
