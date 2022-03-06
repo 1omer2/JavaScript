@@ -1,9 +1,3 @@
-// iki tane hesap oluştur içine bilgileri koy.
-// paracek adında fonksiyon oluştur, hesap ve miktar parametrelerini gir. ekrana hosgeldın yazdır
-//kontrol yapıları ile paranızı cekıp cekemeyecegımızı belirle ve yazdır.
-//bakiye yetersiz ise ek hesab sorusunu getir ve ona uuygun kontrol yapısı oluştur.
-
-
 var hesapA = {
     ad: 'Ömer Müştekin',
     bakiye: 2000,
@@ -23,7 +17,7 @@ function paraCek(hesap,miktar)
     console.log(`Hoşgeldiniz sayın ${hesap.ad}`);
 
     if(hesap.bakiye >= miktar){
-        hesap.bakiye -= miktar;           //para çekme işlemi sonrası çekilen miktarın hesaptan düşmesi gerek.
+        hesap.bakiye -= miktar;                         //para çekme işlemi sonrası çekilen miktarın hesaptan düşmesi gerek.
         console.log('Paranızı çekebilirsiniz.');
     }
     else{
@@ -33,8 +27,8 @@ function paraCek(hesap,miktar)
             if(confirm(' Üzgünüz, ana hesabınızdaki bakiye yapmak istediğiniz işlem için yeterli değil. \n İşleme devam etmek için ek hesabınızı kullanmak ister misiniz?')){
                 console.log('Paranızı çekebilirsiniz');
                 var bakiye = hesap.bakiye;                 //bakiye bilgisini hesap içerisinden aldık
-                var ekhesap = miktar - bakiye;             //ek hesaptan ne kadar çekilecek, ne kadar ihtiyacımız var(miktardan bakiye çıkarsa belli olur)
-                hesap.bakiye = 0;                          //hesap objesinin bakiyesini sıfırlarız çunku hepsını kullanacagız.
+                var ekhesap = miktar - bakiye;             //ek hesaptan ne kadar çekileceğini miktardan bakiyeyi çıkarırsak öğreniriz.
+                hesap.bakiye = 0;                          //hesap objesinin bakiyesini sıfırlarız çunku bu kısımda tamamını kullanacağız.
                 hesap.ekhesap-=ekhesap;
                 }
             else{
