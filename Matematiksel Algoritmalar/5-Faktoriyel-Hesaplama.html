@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Faktoriyel Hesaplama</title>
+</head>
+<body>
+   <h1>Faktöriyel Hesaplama</h1>
+    <input type="text" id="sayi" placeholder="Faktöriyeli hesaplanacak sayıyı giriniz...">
+    <input type="button" value="Hesapla" id="hesapla">
+
+    <style>
+        .html{
+            
+        }
+        h1{
+            margin: 10px;
+          color: indigo;
+        }
+        #sayi{
+            padding: 8px;
+            margin: 10px;
+            height: 10px;
+            width: 300px;
+        }
+        #hesapla{
+            padding: 5px;
+            
+        }
+    </style>
+
+    <script>
+
+        function hesapla(){
+            // çarpma işlemi yapılacaktır. çarpmanın etkisiz elemanı 1 dir.
+            var faktoriyel = 1;
+            var sayi = document.getElementById("sayi").value;
+            sayi=Number(sayi);
+
+           //faktöriyel işlemi sıfır ve üzerindeki sayılarla yapılır
+           if(sayi>=0){
+               for(var i=1; i<=sayi; i++){
+                   faktoriyel*=i;
+               }
+               window.alert(sayi + " sayisinin faktöriyeli: "+ faktoriyel);
+           }
+           else{
+               window.alert("Lütfen pozitif bir sayi giriniz...")
+           }
+        }
+
+        var hesapBtn=document.getElementById("hesapla");
+        hesapBtn.onclick=hesapla;
+    </script>
+</body>
+</html>
