@@ -6,7 +6,7 @@
 
 #Dijital Saat: Gerçek zamanlı çalışan dijital saat.
 
-#Matematiksel Algoritmalar: Bazı matematiksel işlemler ve hesaplamalar.
+#Matematiksel ve Basit Algoritmalar: Bazı matematiksel işlemler ve hesaplamalarla birlikte basit işlevlere sahip JS kodları.
 
 #Sayi Tahmin Etme Oyunu:
 
