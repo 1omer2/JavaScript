@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dikdörtgen Alan ve Çevre Hesaplama</title>
+</head>
+<body>
+    <div class="container">
+        <h1>JS ile Dikdörtgenin Alanı ve Çevresini Hesaplama</h1>
+        <div class="input">
+            <input type="text" id="kisa" placeholder="Lütfen Kısa Kenarı Giriniz...">
+            <input type="text" id="uzun" placeholder="Lütfen Uzun Kenarı Giriniz...">
+            <input type="button" id="hesapla" value="Hesapla">
+        </div>
+       
+    </div>
+  
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            font-family: sans-serif;
+            text-align: center;
+        }
+        .container{
+            margin-top: 20px;
+            border: 1px solid black;
+            padding: 60px;
+        }
+        .input{
+            margin-top: 25px;
+         
+        }
+        #kisa, #uzun, #hesapla{
+            padding: 5px;
+            margin: 5px;
+        }
+
+    </style>
+        
+    <script>
+        function hesapla(){
+
+        var s1=Number(document.getElementById("kisa").value);
+        var s2=Number(document.getElementById("uzun").value);
+
+        var alan = s1*s2;
+        var cevre = (s1+s2)*2;
+
+        alert("Dikdörtgenin Alanı: " + alan + "\nDikdörtgenin Çevresi: " + cevre);
+        }
+
+        var hesapBtn = document.getElementById("hesapla");
+        hesapBtn.onclick = hesapla;
+
+
+    
+    
+
+    </script>
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        var sayilar= new Array(20);
+        var min;
+        var max;
+        
+
+       //Tanımladığım dizinin elemanlarını 1-100 arası rastgele sayılar olarak belirledim.
+        for(i=0; i<sayilar.length; i++){
+            sayilar[i]= Math.floor(Math.random()*100);
+        }
+
+        //Dizinin ilk elemanını min ve max olarak kabul ettim.
+        min = sayilar[0];
+        max = sayilar[0];
+
+        //Dizinin içindeki max ve min değerleri belirledim
+        for(i=0; i<sayilar.length; i++){
+            if(min>sayilar[i]){
+                min = sayilar[i];
+            }
+            if(max<sayilar[i]){
+                max = sayilar[i];
+            }
+        }
+
+        //Ekran çıktısı
+        document.write("-------------------------------------"+"<br>");
+
+        for(i=0; i<sayilar.length; i++){
+            document.write(sayilar[i] +"<br>");
+        }
+
+        document.write("-------------------------------------"+"<br>");
+        document.write("Dizi içindeki en büyük eleman: " + max + "<br>");
+        document.write("Dizi içindeki en küçük eleman: " + min + "<br>");
+        
+    </script>
+
+  
+
+
+</body>
+</html>
+
+
+
+
+   

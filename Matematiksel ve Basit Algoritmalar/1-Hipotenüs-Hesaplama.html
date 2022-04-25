@@ -1,0 +1,68 @@
+
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>JS ile Hipotenüs Hesaplama</title>
+</head>
+
+<body>
+
+    <div id="container">
+        <h2>JavaScript Hipotenüs Hesaplama</h2>
+        <input placeholder="1. Kenarı girin" type="text" id="txtKenar1">
+        <input placeholder="2. Kenarı girin" type="text" id="txtKenar2">
+        <button id="btn">HESAPLA</button>
+       <div id="hipotenus">
+        <div id="sonuc"></div>
+       </div>
+           
+     
+    </div>
+
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        h2{
+            font-family: sans-serif;
+            padding: 20px;
+        }
+        input{
+            padding: 5px;
+            margin: 5px;
+        }
+        #btn{
+            padding: 5px;   
+        }
+        #container{
+            border: 1px solid black;
+            padding: 15px;
+            text-align: center;
+        }
+        #sonuc{
+            padding: 3px;
+            margin-top: 10px;
+            display: inline-block;
+        }
+    </style>
+
+	<script>
+		function Hesapla()
+		{
+			var k1=Number(document.getElementById("txtKenar1").value);
+			var k2=Number(document.getElementById("txtKenar2").value);
+			var hipotenus=Math.sqrt((k1*k1)+(k2*k2));
+			document.getElementById("sonuc").innerHTML="Hipotenüs Değeri : "+hipotenus;
+		} 
+		
+		var hesapBtn=document.getElementById("btn");
+		hesapBtn.onclick=Hesapla;
+	
+	</script>
+	
+</body>
+</html>
+
