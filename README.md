@@ -16,9 +16,9 @@ Gerçek zamanlı çalışan dijital saat.
 
 Bazı matematiksel işlemler ve hesaplamalarla birlikte basit işlevlere sahip JS kodları.
 
-#### Sayi Tahmin Etme Oyunu:
+#### Sayi Tahmin Etme Oyunu
 
-#### Kayan Kartlar: 
+#### Kayan Kartlar
 
 #### To_Do_App_With_LS
 
